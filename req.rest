@@ -1,0 +1,27 @@
+
+GET http://localhost:5000/users
+Authorization: Bearer
+eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOjEyLCJuYW1hIjoiRmFraHJpciIsImVtYWlsIjoiZmFAZ21haWwuY29tIiwiaWF0IjoxNzAxNTIwMDk5LCJleHAiOjE3MDE1MjAxMTl9.84Y9020L_xmSDVXLgCJJSyjUKug3mJlF2dY3aJXVmT
+
+###
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "nama": "Fakhrir",
+    "email": "fa@gmail.com",
+    "password": "123456",
+    "confpassword": "123456"
+}
+
+###
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "fa@gmail.com",
+    "password": "123456"
+}
+
+###
+GET http://localhost:5000/token
